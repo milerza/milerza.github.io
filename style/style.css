@@ -14,11 +14,12 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-  }
+}
+
 .overlay{
     background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    height: 500px;
+   /* position: absolute;*/
+    height: 100%;
     width: 100%;
 }
 
@@ -34,8 +35,9 @@ h2{
 
 h3{
     font-family: 'Comforta', sans-serif;
-    font-size: 50px !important;
+    font-size: 40px !important;
     margin: 50px;
+    margin-top: 80px;
     
     
 }
@@ -65,45 +67,94 @@ p{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     z-index: 100;
+    
 }
 
+
+
 a{
-    color: white;
+    color: white !important;
     margin: 20px;
 }
 
 /* unvisited link */
 a:link {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     
 }
   
   /* visited link */
 a:visited {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
 }
   
   /* mouse over link */
-  a:hover {
-    color: white;
-    text-decoration: none;
- }
+a:hover {
+    color: rgb(197, 215, 248) !important;
+    text-decoration: none !important;
+    background-color: #0d1822 !important;
+    padding: 20px;
+}
   
   /* selected link */
-  a:active {
-    color: rgb(218, 255, 250);
-    text-decoration: none;
-  }
+a:active {
+    color: rgb(197, 215, 248) !important;
+    text-decoration: none !important;
+}
 
 .principal{
     padding-top: 50px ;
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
+    background-color: white !important;
 
 }
+
+.bloco{
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.blocototal{
+    height: auto;
+    margin-top: 20px;
+    width: 100%;
+    background-image:  url("../images/fundo-principal.png");
+    color: white;
+
+    
+
+}
+
+.conteudo{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    
+
+}
+
+
+.coluna{
+    width:40%;
+    min-width: 400px;   
+
+}
+
+.sitacao{
+    font-size: 14px;
+    font-style: italic;
+    margin: auto;
+    
+}
+
+
 
 .footer{
     padding: 20px;

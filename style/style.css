@@ -58,23 +58,15 @@ p{
 }
 
 .menu{
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px;
-    background-color: #0d1822af;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    z-index: 100;
-    
+    background-color: #0d1822ce !important;
+
 }
 
 
 
 a{
     color: white !important;
-    margin: 20px;
+   
 }
 
 /* unvisited link */
@@ -94,8 +86,9 @@ a:visited {
 a:hover {
     color: rgb(197, 215, 248) !important;
     text-decoration: none !important;
+    padding: 10px;
     background-color: #0d1822 !important;
-    padding: 20px;
+   
 }
   
   /* selected link */
@@ -149,8 +142,13 @@ a:active {
 
 .image{
     width: 80% !important ;
+    max-width: 500px;
 }
 
+.imagenova{
+    width: 80% !important ;
+    max-width: 800px;
+}
 
 .footer{
     padding: 20px;
@@ -161,6 +159,28 @@ a:active {
     color: white;
     text-align: center;
 }
+
+@media screen and (min-width: 900px) {
+	.mobile{
+		display: none;
+    }
+    .telacheia{
+		display: block;
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+	.mobile{
+		display: block;
+    }
+    .telacheia{
+		display: none;
+	}
+	
+}
+
+
 
 
 

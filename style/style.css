@@ -135,17 +135,10 @@ a:active {
 .conteudo{
     width: 80%;
     margin: auto;
-    padding: 50px;
-    
-
+    padding: 30px;
+    text-align: center;
 }
 
-
-.coluna{
-    width:40%;
-    min-width: 400px;   
-
-}
 
 .sitacao{
     font-size: 14px;
@@ -154,6 +147,9 @@ a:active {
     
 }
 
+.image{
+    width: 80% !important ;
+}
 
 
 .footer{
@@ -165,4 +161,6 @@ a:active {
     color: white;
     text-align: center;
 }
+
+
 

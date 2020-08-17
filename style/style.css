@@ -65,36 +65,41 @@ p{
 
 
 a{
-    color: white !important;
-   
+    color: #394a5a ;
+    text-decoration: none !important;
+    
 }
 
 /* unvisited link */
 a:link {
-    color: white !important;
-    text-decoration: none !important;
+    color: #394a5a ;
+    text-decoration: none !important ;
     
 }
   
   /* visited link */
 a:visited {
-    color: white !important;
-    text-decoration: none !important;
+    color: #394a5a ;
+    text-decoration: none !important ;
+    
 }
   
   /* mouse over link */
 a:hover {
-    color: rgb(197, 215, 248) !important;
+    color: #394a5a ;
     text-decoration: none !important;
-    padding: 10px;
-    background-color: #0d1822 !important;
-   
+    
 }
   
   /* selected link */
 a:active {
-    color: rgb(197, 215, 248) !important;
-    text-decoration: none !important;
+    color: #394a5a ;
+    text-decoration: none !important ;
+    
+}
+
+.nav-link{
+    color: white !important;
 }
 
 .principal{

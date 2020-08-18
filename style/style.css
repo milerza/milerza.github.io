@@ -70,6 +70,9 @@ a{
     
 }
 
+.preto{
+    background-color: #0d18224f !important;
+}
 /* unvisited link */
 a:link {
     color: #394a5a ;
@@ -128,6 +131,10 @@ a:active {
 
     
 
+}
+
+.perguntas{
+    text-align: left !important;
 }
 
 .conteudo{

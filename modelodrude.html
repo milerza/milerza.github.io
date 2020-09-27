@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Trabalho do curso de Funndamentos de Eletromagnetismo">
+    <meta name="keywords" content="modelo de drude, corrente elétrica, eletomagntismo">
+    <meta name="author" content="Camila Silva Alves">
+    <title>Modelo de Drude</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+ <div class="telacheia">
+  <nav class=" menu navbar fixed-top navbar-light">
+    <a class="nav-link" href="index.html">MENU </a>
+    <a class="nav-link" href="#historia">História </a>
+    <a class="nav-link " href="#modelo">O modelo</a>
+    <a class="nav-link " href="#sentido">Sentido e Direção da Corrente</a>
+    <a class="nav-link " href="#condutividade">Condutividade</a>
+    <a class="nav-link " href="#fatores">Fatores que Afetam a Condutividade</a>
+    <a class="nav-link " href="#quiz">Teste o seu conhecimento</a>
+    <a class="nav-link " href="#referencias">Referências</a>
+              
+ </div>
+    
+  </nav>
+  
+  <div class="mobile">
+    <div class="menu pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="menu p-4">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">MENU </a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#historia">História </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modelo">O modelo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#sentido">Sentido e Direção da Corrente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#condutividade">Condutividade</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#fatores">Fatores que Afetam a Condutividade</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link " href="#quiz">Teste o seu conhecimento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#referencias">Referências</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar fixed-top navbar-dark menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+      
+        
+
+
+
+
+
+    
+<div class="apresentacaodrude">
+        <div class="overlay">
+        <div class="apresentacaotext">
+          <h1>MODELO DE DRUDE</h1>
+        </div>
+        
+        </div>
+      </div>
+      <span id="historia"></span>
+<div   class="principal" >
+
+        <div class="bloco">
+
+          <h3 id="particulaelementar"> História </h3>
+          
+            <div class="row">  
+                   
+              <div class="col-md-8 conteudo">
+                
+                <br/>
+                <img src="images/paul.jpg"  alt="Coulomb"  ><br/>
+               <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Paul_Drude.jpg/200px-Paul_Drude.jpg" target="_blank">
+                <br><i>Paul Drude - (1863- 1906)</i></a> 
+              <br>
+              <br><br>
+                
+                <p> 
+                  Após a descoberta do elétron, pelo físico Joseph John Thomson, em 1897, utilizando os raios catódicos, 
+                  a comunidade cientifica, alguns anos à frente, se deparou com o início do desenvolvimento da teoria quântica. 
+                  Assim, os físicos estavam buscando estudar o estado solido da matéria, explicando os fenômenos ocorridos nos 
+                  materiais.
+              </p>
+              <p>
+                  Durante esses estudos, o físico alemão Paul Drude (1863- 1906), propôs um modelo que explica a condução 
+                  elétrica dos metais.
+              </p>
+              </div>
+            </div>
+                       
+        </div>
+
+        <div class="blocototaldrude ">
+          <div class="overlay">
+          <div class='conteudo '>
+            
+          </div>
+        </div>
+        </div>
+        <span id ='modelo'></span>
+  <div class="bloco">
+        <div class="container ">
+          
+          <div class="row">
+            
+            <div class="col-md conteudo">
+              
+              <h3 >O modelo</h3>
+              <br>
+                  <p>
+                    Para a formulação do modelo, Drude considerou 4 hipóteses, sendo elas:
+                 </p>
+            </div>
+          </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md-8">
+
+                 <p class="perguntas">1- Não existe interação elétron – elétron;</p>
+                 <p class="perguntas"> 2- As colisões ocorrem de forma inesperada, de forma que não exista movimento dos íons;</p>
+                 <p class="perguntas"> 3- Existe um tempo médio entre as colisões;</p>
+                 <p class="perguntas">4- O elétron perde a memória sobre a trajetória e velocidade, após cada colisão.</p>
+                 <br>
+              </div>
+              
+            </div>
+            <div class="row justify-content-md-center" >
+              <div class="col-md conteudo">
+                <p>
+                  Agora considerando um condutor, em equilíbrio eletrostático, temos algumas observações:
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-md-center" >
+                <div class="col-md-8">
+
+                  <p class="perguntas">1- O campo elétrico é nulo em seu interior, logo não existe corrente elétrica.</p>
+                  <p class="perguntas"> 2- Mesmo não existindo corrente elétrica, existe um movimento de elétrons no interior do condutor. 
+                    Esse movimento se equipara ao movimento das moléculas de um gás ideal. O movimento ocorre de forma aleatória 
+                    com uma velocidade muita alta, da faixa de 106m/s.</p>
+                  <p class="perguntas"> 3- Os elétrons são atraídos pelos íons, assim não escapam do material.</p>
+                  <p class="perguntas">4- O movimento é caótico, logo não existe um fluxo efetivo em nenhuma direção, 
+                    não existindo corrente elétrica.
+                    </p>
+                  <br>             
+                  
+               </div>
+              </div>
+              <div class="row justify-content-md-center" >
+                <div class="col-md conteudo">
+                  <p>Considerando que existe um campo elétrico, 
+                    existe um movimento de arraste, provocado pelo campo elétrico. Esse movimento é 
+                    na direção da força elétrica 𝐹⃗ e tem uma ordem de grandeza aproximadamente 10−4m/s. 
+                    Como existe um movimento de arraste, 
+                    teremos uma velocidade de arraste 𝑣⃗, a qual provoca um movimento ordenado, em um sentido determinado, no condutor. Essa movimentação de cargas é denominada Corrente elétrica</p>
+                </div>
+              </div>
+ 
+            <div class="row">
+              <div class="col-md conteudo">
+                <p>Assim,  a corrente elétrica é definida como o fluxo total das cargas por unidade de tempo. 
+                  Deste modo, quando uma carga dQ flui em uma área em um intervalo de tempo dt, temos:
+                </p>
+                <p><img src="images/correnteele.png" alt="Fórmula da corrente elétrica" class="image"></p>
+            </div>
+
+            
+  </div></div></div>
+  <div class="blocototaldrude ">
+  <div class="overlay">
+  <div class='conteudo '>
+     </div> </div>
+  </div><span id="sentido"></span>
+<div class="bloco"><div class="container">
+  <div class="row">
+    <div class="col-md conteudo">
+      <h3 id="importante">Sentido e Direção da Corrente Elétrica</h3>
+      <br>
+      <p>Com  a movimentação  de cargas em uma determinada direção, é esperado que exista um sentido 
+        para a corrente Elétrica.</p>
+        <p>Mas como determinar o sentido dessa grandeza a partir da sua carga?</p>
+      <p>Se o movimento for de prótons, como no acelerador de partículas, por exemplo, haverá a movimentação de cargas positivas. 
+        Já no caso da corrente elétrica gerada nos condutores usuais, o que ocorre é o arraste de elétrons. Desse modo,
+        o Sentido convencional adotado é dado ao observar o movimento dos portadores de carga, atribuindo-o conforme o sentido 
+        teórico ou real de cargas positivas. 
+      </p>
+      <p>
+        Nesse sentido, se a corrente elétrica gerada por prótons, é adotada o sentido real dessa movimentação.
+        Todavia, se a corrente é produzida por elétrons, o sentido covencional é adotado pelo movimento teórico de cargas positivas. 
+        Veja a imagem abaixo:
+      </p>
+      <br>
+      <p><img src="images/sentidocorrente.jpg" alt="Sentido da corrente elétrica" class="image"></p>
+     
+    </div>
+  </div>
+            <div class="row ">
+              <div class="col-md conteudo ">
+                <h4>Outras formas de expressar corrente elétrica</h4>
+                <br>
+                <p>Outra maneira de definir a corrente elétrica é relacionando com uma seção reta de área A, assim:                
+                </p>
+                <p><img src="images/correntearea.png" alt="Relação da Corrente com a área" class="imagenova"></p>
+                <p>Com isso, podemos definir densidade de corrente (J) como a corrente que flui por unidade de área da seção reta:</p>
+                <p><img src="images/denscorrente.png" alt="Densidade da corrente elétrica" class="image"></p>
+                <p>Observe que é considerado o valor da carga q é dado em valor absoluto pois estamos olhando conforme o sentido 
+                  covencional, que é sempre positivo.</p>
+                <br><br> <span id='condutividade'></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+              </div></div>
+<div class="bloco"><div class="container">                <h3>Condutividade</h3>
+                <br>
+                <p>A condutividade elétrica de um material representa a capacidade que 
+                  ele tem de transportar cargas elétricas, quando submetido a uma diferença de potencial.
+                   Um material de condutividade alta tem uma facilidade de transportar cargas elétricas, e de maneira oposta, 
+                   um material com condutividade elétrica baixa, 
+                  apresenta uma resistência maior ao transporte de cargas elétricas.</p>
+                <p>
+                </p>
+                <p>A condutividade (σ) é dada pela razão entre a densidade de corrente e o campo elétrico:</p>
+                <p><img src="images/condutividade.png" class="image" alt="Condutividade"></p>
+                <p><strong>Condutividade de alguns materias</strong></p>
+                <p><img src="images/condutabela.jpg" class="image" alt="Condutividade"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <h4 >Efeitos da Condutividade</h4>
+                <p>A condutividade por ser uma propriedade que diz sobre a capacidade dos materiais de conduzir eletricidade,
+                   ela acaba sendo um importante fator na definição dos materiais. 
+                   Com isso, de forma geral, todos os materiais físicos possuem a
+                   habilidade de conduzir eletricidade, sendo subdividido nas seguintes categorias:</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md conteudo">
+                <img src="images/fiocobre.jpg" class='image' alt="atomo" >
+                <br>
+                <i><b>Fio de cobre.</b> Condutor utilizado para condução de eletricidade em aparelhos e contruções.</i>
+              </div>
+              <div class="col-md conteudo">
+                <p><strong>Condutores elétricos</strong></p>
+                <p>São aqueles materiais que possuem alta condutividade, sendo a maioria metais
+                   (porém também existe condutores não-metais e iônicos), variando devido as propriedades intrínsecas dos materiais.
+                   Um bom condutor é aquele que apresenta a condutividade maior de 10^4 /Ωm.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <img src="images/luva.png" class='image' alt="atomo" >
+                <br>
+                <i><b>Luva de eletricitas.</b> Feita de material isolante para evitar que o eletricista leve choque.</i>
+              </div>
+              <div class="col-md conteudo">
+                <p><strong>Isolantes</strong></p>
+                <p>São aqueles que possuem uma quantidade muito pequena de elétrons livres,
+                   o que acarreta uma aplicação de diferença de potencial muito elevada para que a corrente elétrica o percorra. 
+                  Um bom isolante apresenta uma condutividade de cerca de 10^(-10) /Ωm. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <img src="images/placasilicio.png" class='image' alt="atomo" >
+                <br>
+                <i><b>Chip de computador.</b> Chip confeccionado por dopagem de Silicio com Fósforo em semicontudor.</i>
+              </div>
+              <div class="col-md conteudo">
+                <p><strong>Semicondutores</strong></p>
+                <p>São aqueles que possuem propriedades intermediárias ao comparados com materiais condutores e materias isolantes. 
+                  Normalmente são utilizados na indústria eletrônicas, os mais comumente utilizados são o Silício, 
+                  o Germânio e o comporto Arseneto de Gálio. 
+                  Um semicondutor típico apresenta condutividade entre 10^(-10/Ωm) e 10^4 /Ωm, dependendo da temperatura. </p>
+              </div>
+            </div>
+            </div></div>
+            <span id="fatores"></span>
+            <div class="bloco fundoverde"><div class="container">             <div class="row">
+              <div class="col-md conteudo">
+                <h3>Fatores que afetam a condutividade</h3>
+                <br><br>
+                <p>A condutividade não é uma propriedade constante na natureza, ela varia entre um condutor e outro, 
+                  além de que pode ser alterada ou influenciada por alguns aspectos, tais como:</p>
+              </div>
+            </div>
+            </div></div><div class="bloco"><div class="container"> 
+            <div class="row">
+              <div class="col-md conteudo">
+                <p><strong>Temperatura</strong></p>
+              </div>
+              <div class="col-md conteudo">
+                <p>Ao aumentar a temperatura de um condutor, pode-se alterar sua condutividade,
+                   tendo em vista que essa variação ocorre em virtude da excitação térmica dos átomos dos materiais.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <p>Não é atoa que alguns aparelhos eletrônicos sensíveis costumam ser 
+                  acompanhados de mecanismos de resfriamento para manter a temperatura do condutor constante.
+                  Por exemplo, o cooler em um notebook, que tem o papel de reduzir o calor gerado pelos componentes
+                   da máquina.</p>
+              </div>
+              <div class="col-md conteudo">
+                <p><img src="images/cooler.jpg" class="image" alt="Condutividade"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md conteudo">
+                <p><strong>Impurezas</strong></p>
+
+              </div>
+              <div class="col-md conteudo">
+                <p>Ao se ter impurezas, ou seja, partículas de isolamento de elementos não condutores nos condutores elétricos,
+                   pode haver impedimento do fluxo de corrente nos condutores, levando a uma diminuição nos níveis de condutividade 
+                  do material (essas partículas podem ser de origem natural ou por falhas de fabricação).</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <p>Por exemplo, o nível de impureza em materiais semicondutores afeta a condutividade mais do que nos materiais condutores,
+                  em alguns casos melhorando-a e em outros casos reduzindo a condutividade.
+                  O seguinte gráfico mostra a relação da contudividade do alumínio e a quantidade de impurezas:</p>
+              </div>
+              <div class="col-md conteudo">
+                <p><img src="images/grafico.jpg" class="image" alt="Condutividade"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <p><strong>Campos eletromagnéticos</strong></p>
+
+              </div>
+              <div class="col-md conteudo">
+                <p>Ao constatar a presença de campos eletromagnéticos ao redor do condutor elétrico,
+                   sua condutividade pode ser alterada. Embora os condutores criem campos magnéticos quando conduzem corrente,
+                    esses campos se encontram de forma perpendicular uns aos outros, o que não causa problema no fluxo de corrente. 
+                    Porém, quando se trata de campos externos, essa organização é independente, 
+                  o que pode atrapalhar o fluxo de corrente ou até interrompê-lo, dependendo de sua intensidade.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md conteudo">
+                <p><strong>Frequência</strong></p>
+
+              </div>
+              <div class="col-md conteudo">
+                <p>Ao trabalhar com corrente alternada, ou seja, que oscila quando fluí, 
+                  pode haver interferência da frequência da corrente elétrica, uma vez que quando muito aumentada,
+                  acima de um certo limite, ocasiona em um fluxo de corrente no redor de um condutor e não através dele. 
+                  Essa situação é também conhecida como efeito pelicular, que ocorre normalmente quando a
+                   frequência aumenta acima de 3GHz – Hertz – (ou 3.000.000.000 ciclos oscilatórios de corrente por segundo).</p>
+              </div>
+            </div>
+            </div>
+</div></div>
+
+<span id="quiz"></span>
+            <div class="bloco fundoverde"><div class="container"> 
+      <div class="row">
+        <div class="col-md conteudo">
+          <h3 id="quiz">Teste os seus conhecimentos</h3>
+        
+ 
+        </div>
+      </div></div></div>
+
+      <div class="container"> 
+      <div class="row">
+        <div class="col-md-8 justify-content-md-center">
+          <br>
+        <p class="perguntas"><b>1.</b> As seguintes afirmações são verdadeiras ou falsas?
+        </p>
+        
+          <div class="form-check">
+            <form action="">
+            
+            <label class="form-check-label" for="p1r0">
+              <p class="perguntas">a) Existem condutores que não possuem corrente elétrica em seu interior.  </p>
+            </label>
+            <select  type="checkbox" name="p1" id="p1r0"  >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+          <br><br><br>
+            
+            <label class="form-check-label" for="p1r1">
+              <p class="perguntas">b) A velocidade de arraste em condutores não provoca uma corrente elétrica em seu interior.</p>
+            </label>
+            
+            <select  type="checkbox" name="p1" id="p1r1"  >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+          <br><br><br>
+            
+            <label class="form-check-label" for="p1r2">
+              <p class="perguntas">c) Em circuitos elétricos, não importa qual carga esteja em movimento para considerar o sentido da corrente convencional.</p>
+            </label>
+            <select  type="checkbox" name="p1" id="p1r2" >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+          <br><br><br>
+            <label class="form-check-label" for="p1r3">
+              <p class="perguntas">d)  Quanto menor a condutividade elétrica, maior a capacidade do material em transportar cargas elétricas.</p>
+            </label>
+            <select  type="checkbox" name="p1" id="p1r3" >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+          <br><br><br>
+            <label class="form-check-label" for="p1r4">
+              <p class="perguntas">e)  A corrente elétrica é dada pela razão da unidade de carga dQ por um intervalo de tempo dt.</p>
+            </label>
+            <select  type="checkbox" name="p1" id="p1r4" >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+            <br><br><br>
+            <label class="form-check-label" for="p1r5">
+              <p class="perguntas">f)  A corrente elétrica é dada pela razão da unidade de carga dQ por um intervalo de tempo dt.</p>
+            </label>
+            <select  type="checkbox" name="p1" id="p1r5" >
+              <option value="0">Falso</option>
+              <option value="1">Verdadeiro</option>
+            </select>
+            <br><br>
+            <a href="#g1">Confira a resposta correta</a>
+          </div>
+        </form>
+        </div>
+        
+
+         
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-8 justify-content-md-center">
+          <br>
+        <p class="perguntas"><b>2.</b>A condutividade elétrica é uma propriedade sempre constante,
+           sendo afetada apenas por condições ambientais e externas ao material”. Essa frase é:
+        </p>
+        
+          <div class="form-check">
+            <form action="">
+              <input  type="radio" name="p2" id="p2r0">
+            <label class="form-check-label" for="p2r0">
+              <p class="perguntas">a) Verdadeira. </p>
+            </label>
+            
+          <br>
+          <input  type="radio" name="p2" id="p2r1">
+          <label class="form-check-label" for="p2r1">
+            <p class="perguntas">b) Falsa. </p>
+          </label>
+          
+        <br>
+            
+            
+            <a href="#g2">Confira a Resposta correta</a>
+          </div>
+        </form>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-8 justify-content-md-center">
+          <br>
+        <p class="perguntas"><b>3.</b>Correlacione o valor de condutividade com a categoria do material.
+        </p>
+        <table style="width:100%">
+          <tr>
+            <td><p>i. Isolante</p> </td>
+            <td><p>I. De 10^(-10)/ Ωm a 10^4/ Ωm</p></td> 
+            
+          </tr>
+         
+          <tr>
+            <td> <p>ii. Semicondutor</p></td>
+            <td><p>II. Maior que 10^4/Ωm</p></td>
+          </tr>
+          <tr>
+            <td><p>iii. Condutor</p></td>
+            <td><p>III. Menor que 10^(-10)/ Ωm</p></td>
+          </tr>
+          
+        </table>
+        <br><br>
+          <div class="form-check">
+            <form action="">
+              <input  type="radio" name="p3" id="p3r0">
+            <label class="form-check-label" for="p3r0">
+              <p class="perguntas">a) i-II; ii-III; iii-I </p>
+            </label>
+            
+          <br>
+          <input  type="radio" name="p3" id="p3r1">
+          <label class="form-check-label" for="p3r1">
+            <p class="perguntas">b) ii-I; iii-II; i-III. </p>
+          </label>
+          <br id="g1">
+          <input  type="radio" name="p2" id="p3r2">
+          <label class="form-check-label" for="p3r2">
+            <p class="perguntas">c) iii-III; ii-II; i-I. </p>
+          </label>
+          
+        <br>
+            
+            
+            <a href="#g3">Confira a Resposta correta</a>
+          </div>
+        </form>
+        </div>
+
+        <div class="bloco"><div class="container"> 
+          <div class="row">
+            <div class="col-md ">
+              <h3 id="quiz">Gabarito</h3>
+              <h4>Questão 1</h4>
+            <div>
+             <p>A – Verdadeiro. Em condutores que não existe campo elétrico em seu interior, não existe corrente elétrica.</p>
+             <p>B – Falso. A velocidade de arraste, mesmo sendo muito pequena, provoca uma corrente elétrica no interior do condutor.
+            </p> 
+            <p>C – Verdadeiro. O sentido convencional da corrente elétrica se mantem o mesmo, independente do sinal da carga que esteja em movimento.
+            </p>
+            <p>D – Falso. Quanto menor for a condutividade elétrica de um material, mais dificuldade ele terá para transportar cargas elétricas.
+            </p>
+            <p>E – Verdadeiro. I = 𝑑𝑄/𝑑𝑡
+            </p>
+            <p id="g2">F – Falso. A densidade de corrente descreve como as cargas fluem em determinado ponto. Por outro lado, a corrente elétrica descreve como as cargas fluem através de um objeto estendido, como um fio.</p>
+            </div>
+
+            <h4>Questão 2</h4>
+            <div>
+              <p id="g3">Letra b. A frase em questão é falsa, já que a condutividade também é afetada por questões internas ao material,
+                 tais como a presença de impurezas na estrutura microscópica.</p>
+             </div>
+            
+             <h4>Questão 3</h4>
+            <div>
+              <p>Letra b. </p>
+             </div>
+            
+     
+            </div>
+          </div></div></div>
+
+
+
+      </div>
+      
+
+       
+    </div>
+
+     
+       
+    </div>
+<span id="referencias"></span>
+    <div class="row fundoazul">
+      <div class="col-md-8 conteudo">
+        <h3 id="referencias">Referências</h3>
+      <br>
+      <p>4 fatores que afetam a condutividade elétrica. Foxlux. 2015. Disponível em: <a href="https://www.foxlux.com.br/blog/dicas/4-fatores-que-afetam-a-condutividade-eletrica" target="_blank">https://www.foxlux.com.br/blog/dicas/4-fatores-que-afetam-a-condutividade-eletrica</a>. Acesso em: 23 de setembro de 2020. </p>
+
+      <p>AMORIM, Bernardo Corrêa. O Modelo de Drude para Interação com Metais. Instituto de Física de São Carlos – USP, São Paulo, 06 jun. 2018. Disponível em: <a href="http://www.ifsc.usp.br/~strontium/Teaching/Material2018-1%20SFI5708%20Eletromagnetismo/Monografia%20-%20Bernardo%20-%20Modelo%20Drude.pdf" target="_blank">http://www.ifsc.usp.br/~strontium/Teaching/Material2018-1%20SFI5708%20Eletromagnetismo/Monografia%20-%20Bernardo%20-%20Modelo%20Drude.pdf</a> Acesso em: 23 de Set. 2020.</p>
+
+      <p>Cooler de alumínio. Americanas. Disponível em: <a href="https://www.americanas.com.br/produto/1218170096/silencioso-cooler-de-aluminio-notebook-cooling-pad-base-de-5v-led-6-fas-notebook-laptop-cooler-porta-usb-suporte-para-hp-15-17-15-6#info-section" target="_blank">https://www.americanas.com.br/produto/1218170096/silencioso-cooler-de-aluminio-notebook-cooling-pad-base-de-5v-led-6-fas-notebook-laptop-cooler-porta-usb-suporte-para-hp-15-17-15-6#info-section</a>. Acesso em: 23 de setembro de 2020.</p>
+
+      <p>KÍTOR, G. L.. Condutividade Elétrica. InfoEscola. [202-]. Disponível em: <a href="https://www.infoescola.com/fisica/condutividade-eletrica/#:~:text=Os%20materiais%20s%C3%A3o%20classificados%20como,entre%2010%2D10%2F%CE%A9.&text=Os%20metais%20geralmente%20possuem%20%C3%B3tima,faixa%20de%20107%2F%CE%A9"target="_blank">https://www.infoescola.com/fisica/condutividade-eletrica</a>. Acesso em: 23 de setembro de 2020.</p>
+      
+      <p>OLIVEIRA, J. C. P. T.; PADILHA, A. F.. Caracterização microestrutural dos alumínios comerciais AA1100, AA1050 e AA1017 e do alumínio superpuro AA1199. Scielo. 2009. Disponível em: <a href="https://www.scielo.br/scielo.php?script=sci_arttext&pid=S0370-44672009000300017" target="_blank">https://www.scielo.br/scielo.php?script=sci_arttext&pid=S0370-44672009000300017</a>. Acesso em: 23 de setembro de 2020.</p>
+
+      <p>REIS, Fábio. Curso de Eletrônica - Condutores, semicondutores e isolantes. Bóson Treinamentos em ciência e tecnologia. 2016. Disponível em: <a href="http://www.bosontreinamentos.com.br/eletronica/curso-de-eletronica/curso-de-eletronica-condutores-semicondutores-e-isolantes" target="_blank">http://www.bosontreinamentos.com.br/eletronica/curso-de-eletronica/curso-de-eletronica-condutores-semicondutores-e-isolantes</a>. Acesso em: 23 de setembro de 2020.</p>
+
+      <p>SEARS, F. W. ; ZEMANSKY, M. Física III - Eletromagnetismo Young & Freedman: 12 e.d. São Paulo: Editora Addison Wesley. p. 135-140
+      </p>
+
+      </div>
+    </div>
+  
+  
+  
+
+
+
+      
+    <div class="footer">
+        <div class="row">
+          <div class="col-md">
+            <i>Site desenvolvido como critério de avaliação no curso  de Fundamentos de Eletromagnetismo - ERE da UFMG </i><br>
+            <i>Integrantes da Equipe: Camila Silva Alves, Gabriel Henrique de Paula Ferreira, Giovanna Rodrigues Fajoli</i>
+          </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

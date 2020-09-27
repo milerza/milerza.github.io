@@ -16,6 +16,19 @@
     position: relative;
 }
 
+.apresentacaodrude{
+    background-image: url("../images/fundodrude.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
 .overlay{
     background-color: rgba(0,0,0,0.5);
    /* position: absolute;*/
@@ -47,6 +60,7 @@ p{
     font-size: 20px;
 }
     
+
 
 .apresentacaotext{
     text-align: center;
@@ -132,6 +146,14 @@ a:active {
     
 
 }
+.blocototaldrude{
+    height:150px;
+    margin-top: 20px;
+    width: 100%;
+    background-image:  url("../images/fundodrude.jpg");
+    color: white;
+
+}
 
 .perguntas{
     text-align: left !important;
@@ -152,11 +174,15 @@ a:active {
     
 }
 
+
 .image{
     width: 80% !important ;
     max-width: 500px;
 }
-
+.imagemenor{
+    width: 40% !important ;
+    min-width: 200px;
+}
 .imagenova{
     width: 80% !important ;
     max-width: 800px;
@@ -192,7 +218,49 @@ a:active {
 	
 }
 
+.menuinicial{
+    background-color: rgba(255, 255, 255, 0.63);
+    backdrop-filter: blur(5px);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right:80px ;
 
+}
 
+.apresentacaotextmenu{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
 
+.topicosmenu{
+    width: auto;
+    border: 1px solid rgba(139, 139, 139, 0.877);
+    margin-top: 40px;
+    padding: 20px;
+    
+}
 
+.tm{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.topicosmenu:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fundoverde{
+    background-color: #192e41 !important;
+    color: white !important;
+}
+
+.fundoazul{
+    background-color: #c2d6e9 !important;
+    color: black !important;
+}
